@@ -1,0 +1,167 @@
+:root{
+    /* CTAs, Focused, Active states, Links */
+    --primary-brand:#4D5AE5;
+
+    /* overlays, shadows,headings */
+    --dark:#2E2F42;
+
+    /* valid fields, success messages */
+    --success:#31D0AA;
+
+    /* Body Text */
+    --text:#434455;
+
+    /* Helper text, Deemphasized text*/
+    --sublte-text:#8E8F99;
+
+    /* Accent color Hairlines Subtle backgrounds */
+    --Accent:#E7E9FC;
+
+    /* Light mode backgrounds Light mode Dialogs/alerts */
+    --Light:#F4F4FD;
+
+    /* background color , hero-title */
+    --background:#FFFFFF;
+
+    /* MAIN BUTTON ACTIVE COLOR */
+    --active-button:#404BBF;
+}
+
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+/* LISTS DECORATION */
+.ulists {
+    list-style: none;
+}
+
+/* LINK DECORATION */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BUTTONS */
+.button{
+    color:var(--primary-brand);
+    background-color: var(--Light);
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.button:hover,
+.button:focus{
+    color: var(--background);
+    background-color: var(--primary-brand);
+}
+.mainbutton.button{
+    color:var(--background);
+    background-color: var(--primary-brand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    display: flex;  
+}
+.mainbutton.button:active{
+   background-color:var(--active-button);
+}
+/* TITLES */
+.title{
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* HEADER */
+.navigation .link {
+    color: var(--dark);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.info,
+.ulists,
+.footer-text{
+    letter-spacing: 0.02em;
+}
+/* .navigation .link:active{
+color: var(--primary-brand);
+} */
+.nav.link:hover,
+.nav.link:focus {
+    color:var(--text)
+}
+.navigation .link.current {
+    color: var(--primary-brand)
+}
+.link.logo{
+    font-family: Raleway, sans-serif;
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.logo-blue{
+    color: var(--primary-brand);
+}
+.logo.logo-white{
+    color: var(--Light);
+}
+/* Hero Section */
+.section.hero{
+    background-color: var(--dark);
+}
+.hero-title{
+    color: var(--background);
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+/* What are we doing section */
+.title.big-title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center; 
+    text-transform: capitalize;
+}
+/* OUR team Section */
+.team-section{
+    background-color: var(--Light);
+}
+.team-cards{
+    background-color: var(--background);
+    display: inline-block;
+    margin: 24px;
+}
+/* Footer */
+.footer{
+    background-color:var(--dark)
+}
+.footer-text{
+    color: var(--Accent);
+}

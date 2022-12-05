@@ -35,15 +35,33 @@ html{
 *::after{
     box-sizing: inherit;
 }
-ul,h1,h2,h3{
+ul,h1,h2,h3,p{
     margin:0 0;
-    padding: 0;
+    padding:0 0;
 }
 .container{
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid blue;
+}
+.header-container{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+/* УДАЛИТЬ ПОСЛЕ УСТАНОВКИ */
+.header{
+    border:2px solid  orange;
+}
+.section{
+   padding-top: 120px;
+   padding-bottom: 120px;
+   border: 2px solid orange;
+}
+.section.portfolio-section{
+    padding-top: 96px;
 }
 
 body {
@@ -80,6 +98,11 @@ body {
     border-radius: 4px;
     padding: 8px 16px;
 }
+/* FILTER BUTTONS BLOCK*/
+.filter{
+    border: 2px solid pink;
+    margin-bottom: 72px;
+}
 .button:hover,
 .button:focus{
     color: var(--background);
@@ -95,8 +118,10 @@ body {
     border-radius: 4px;
     align-items: center;
     padding: 16px 32px;
-    min-width: 170;
+    min-width: 170px;
     border-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 .mainbutton.button:active{
    background-color:var(--active-button);
@@ -108,7 +133,11 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
+/* .title.our-advantages{
+margin-bottom: 8px;
+} */
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -155,10 +184,13 @@ color: var(--primary-brand);
 }
 .logo.logo-white{
     color: var(--Light);
+    display:inline-block;
+    margin-bottom: 16px;
 }
 /* Hero Section */
 .section.hero{
     background-color: var(--dark);
+   
 }
 .hero-title{
     color: var(--background);
@@ -166,6 +198,8 @@ color: var(--primary-brand);
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    margin-bottom: 48px;
+    border:2px solid green;
 }
 /* What are we doing section */
 .title.big-title{
@@ -174,7 +208,9 @@ color: var(--primary-brand);
     line-height: 1.11;
     text-align: center; 
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
+
 /* OUR team Section */
 .team-section{
     background-color: var(--Light);
@@ -186,8 +222,14 @@ color: var(--primary-brand);
 }
 /* Footer */
 .footer{
-    background-color:var(--dark)
+    background-color:var(--dark);
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 .footer-text{
     color: var(--Accent);
+}
+/* PORTFOLIO IMAGES  */
+.portfolio-picture{
+    margin-bottom: 32px;
 }

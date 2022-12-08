@@ -45,11 +45,40 @@ ul,h1,h2,h3,p{
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .header-container{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    align-items:center ;
+   
+}
+.navigation .ulists{
+    display: flex;
+}
+.content{
+    margin-right: 40px;
+}
+.content .link{
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+.content:last-child{
+    margin-right: 0;
+}
+.ulists.info{
+    display: flex;
+}
+.info .content{
+    margin-right: 40px;
+}
+.info .content:last-child{
+    margin-right: 0px;
 }
 /* УДАЛИТЬ ПОСЛЕ УСТАНОВКИ */
 .header{
@@ -102,6 +131,14 @@ body {
 .filter{
     border: 2px solid pink;
     margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+}
+.filter-button{
+    margin-right: 24px;
+}
+.filter-button:last-child{
+margin-right: 0px;
 }
 .button:hover,
 .button:focus{
@@ -178,6 +215,9 @@ color: var(--primary-brand);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    margin-right: 77px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo-blue{
     color: var(--primary-brand);
@@ -185,7 +225,7 @@ color: var(--primary-brand);
 .logo.logo-white{
     color: var(--Light);
     display:inline-block;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 /* Hero Section */
 .section.hero{
@@ -201,6 +241,19 @@ color: var(--primary-brand);
     margin-bottom: 48px;
     border:2px solid green;
 }
+/* our advantages section */
+.ulists.advantages {
+    display: flex;
+}
+
+.advantages .text-content {
+    width: 264px;
+    margin-right: 24px;
+}
+
+.advantages .text-content:last-child {
+    margin-right: 0px;
+}
 /* What are we doing section */
 .title.big-title{
     font-weight: 500;
@@ -210,6 +263,11 @@ color: var(--primary-brand);
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+.our-job{
+    display: flex;
+    column-gap: 24px;
+}
+
 
 /* OUR team Section */
 .team-section{
@@ -217,8 +275,17 @@ color: var(--primary-brand);
 }
 .team-cards{
     background-color: var(--background);
-    display: inline-block;
-    margin: 24px;
+}
+.team-list{
+    display: flex;
+    column-gap: 24px;
+}
+.team-cards .text-content{
+    text-align: center;
+    padding-top: 32px; 
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 /* Footer */
 .footer{
@@ -229,7 +296,21 @@ color: var(--primary-brand);
 .footer-text{
     color: var(--Accent);
 }
+.foot-container{
+    width: 264px;
+}
+
 /* PORTFOLIO IMAGES  */
 .portfolio-picture{
     margin-bottom: 32px;
+}
+.portfolio-exempls{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-exempls .text-content{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }

@@ -81,13 +81,9 @@ ul,h1,h2,h3,p{
     margin-right: 0px;
 }
 /* УДАЛИТЬ ПОСЛЕ УСТАНОВКИ */
-.header{
-    border:2px solid  orange;
-}
 .section{
    padding-top: 120px;
    padding-bottom: 120px;
-   border: 2px solid orange;
 }
 .section.portfolio-section{
     padding-top: 96px;
@@ -129,7 +125,6 @@ body {
 }
 /* FILTER BUTTONS BLOCK*/
 .filter{
-    border: 2px solid pink;
     margin-bottom: 72px;
     display: flex;
     justify-content: center;
@@ -239,7 +234,6 @@ color: var(--primary-brand);
     line-height: 1.07;
     text-align: center;
     margin-bottom: 48px;
-    border:2px solid green;
 }
 /* our advantages section */
 .ulists.advantages {

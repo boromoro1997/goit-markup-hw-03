@@ -39,6 +39,16 @@ ul,h1,h2,h3,p{
     margin:0 0;
     padding:0 0;
 }
+/* LISTS DECORATION */
+.ulists {
+    list-style: none;
+}
+
+/* LINK DECORATION */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
 .container{
     padding-left: 12px;
     padding-right: 12px;
@@ -60,7 +70,7 @@ ul,h1,h2,h3,p{
 .navigation .ulists{
     display: flex;
 }
-.content{
+.content:not(:last-child){
     margin-right: 40px;
 }
 .content .link{
@@ -68,17 +78,11 @@ ul,h1,h2,h3,p{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.content:last-child{
-    margin-right: 0;
-}
 .ulists.info{
     display: flex;
 }
-.info .content{
+.info .content:not(:last-child){
     margin-right: 40px;
-}
-.info .content:last-child{
-    margin-right: 0px;
 }
 /* УДАЛИТЬ ПОСЛЕ УСТАНОВКИ */
 .section{
@@ -95,17 +99,6 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 16px;
 }
-/* LISTS DECORATION */
-.ulists {
-    list-style: none;
-}
-
-/* LINK DECORATION */
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* BUTTONS */
 .button{
     color:var(--primary-brand);
@@ -115,10 +108,11 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+
+    display: flex;
+    align-items: center;
     border: 1px solid var(--Accent);
     border-radius: 4px;
     padding: 8px 16px;
@@ -129,11 +123,8 @@ body {
     display: flex;
     justify-content: center;
 }
-.filter-button{
-    margin-right: 24px;
-}
-.filter-button:last-child{
-margin-right: 0px;
+.filter-button:not(:last-child){
+    margin-right: 40px;
 }
 .button:hover,
 .button:focus{
@@ -146,6 +137,7 @@ margin-right: 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+
     display: flex;  
     border-radius: 4px;
     align-items: center;
@@ -167,9 +159,6 @@ margin-right: 0px;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
-/* .title.our-advantages{
-margin-bottom: 8px;
-} */
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -210,6 +199,7 @@ color: var(--primary-brand);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+
     margin-right: 77px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -219,6 +209,7 @@ color: var(--primary-brand);
 }
 .logo.logo-white{
     color: var(--Light);
+
     display:inline-block;
     padding-bottom: 16px;
 }
@@ -233,6 +224,7 @@ color: var(--primary-brand);
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+
     margin-bottom: 48px;
 }
 /* our advantages section */
@@ -255,6 +247,7 @@ color: var(--primary-brand);
     line-height: 1.11;
     text-align: center; 
     text-transform: capitalize;
+
     margin-bottom: 72px;
 }
 .our-job{
@@ -284,6 +277,7 @@ color: var(--primary-brand);
 /* Footer */
 .footer{
     background-color:var(--dark);
+
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -308,3 +302,5 @@ color: var(--primary-brand);
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+

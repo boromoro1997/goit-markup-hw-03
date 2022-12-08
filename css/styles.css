@@ -127,7 +127,7 @@ body {
     justify-content: center;
 }
 .filter-button:not(:last-child){
-    margin-right: 40px;
+    margin-right: 24px;
 }
 .button:hover,
 .button:focus{

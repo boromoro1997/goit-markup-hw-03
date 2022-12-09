@@ -92,6 +92,9 @@ ul,h1,h2,h3,p{
    padding-top: 120px;
    padding-bottom: 120px;
 }
+.advantages-section{
+    padding-bottom: 0px;
+}
 .section.portfolio-section{
     padding-top: 96px;
 }
@@ -185,6 +188,7 @@ body {
 .ulists,
 .footer-text{
     letter-spacing: 0.02em;
+    line-height: 1.5;
 }
 /* .navigation .link:active{
 color: var(--primary-brand);
@@ -219,6 +223,8 @@ color: var(--primary-brand);
 /* Hero Section */
 .section.hero{
     background-color: var(--dark);
+    padding-bottom: 192px;
+    padding-top: 192px;
    
 }
 .hero-title{
@@ -306,6 +312,8 @@ color: var(--primary-brand);
     border-top: 0px;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 

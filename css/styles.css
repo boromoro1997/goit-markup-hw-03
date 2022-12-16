@@ -27,6 +27,30 @@
     --active-button:#404BBF;
 }
 
+/* TESTOVIE CSS */
+.spisak{
+    list-style: none;
+    border: black solid 2px;
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+}
+.bird{
+    width: 300px;
+}
+.bittmen{
+    border-radius: 50%;
+    margin: 40px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: none;
+    padding: 10px;
+    background-image: url('../images/twitter\ 1.svg') ;
+
+}
+
+/* TESTOVIE CSSS */
 html{
     box-sizing: border-box;
 }
@@ -219,13 +243,17 @@ color: var(--primary-brand);
 
     display:inline-block;
     padding-bottom: 16px;
+    padding-top: 0px;
 }
 /* Hero Section */
 .section.hero{
     background-color: var(--dark);
     padding-bottom: 192px;
     padding-top: 192px;
-   
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
 }
 .hero-title{
     color: var(--background);
@@ -239,6 +267,16 @@ color: var(--primary-brand);
 /* our advantages section */
 .ulists.advantages {
     display: flex;
+}
+.picture{
+    background-color: var(--Light);
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 8px;
+
 }
 
 .advantages .text-content {
@@ -283,6 +321,55 @@ color: var(--primary-brand);
     padding-left: 16px;
     padding-right: 16px;
 }
+.contact-links{
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+    margin-top: 12px;
+}
+.sotial-media-link{
+    display: flex;
+    justify-content:center ;
+    padding:12px;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+    color: var(--background);
+}
+.sotial-media-link:hover,
+.sotial-media-link:focus{
+    background-color: aqua;
+    color: cornflowerblue;
+}
+.icon{
+    fill: currentColor;
+}
+/* CUSTOMERS SECTION */
+.our-customers-list{
+    display: flex;
+    column-gap: 24px;
+}
+.customers-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 168px;
+height: 88px;
+color: var(--sublte-text);
+border: 1px solid var(--sublte-text);
+border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus{
+    color:var(--primary-brand);
+    border-color: var(--primary-brand);
+}
+
+.customers-logo{
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
+}
+
 /* Footer */
 .footer{
     background-color:var(--dark);
@@ -293,10 +380,38 @@ color: var(--primary-brand);
 .footer-text{
     color: var(--Accent);
 }
+.sotial-text{
+    font-weight: 500;
+}
+.footer > .container{
+    display: flex;
+    column-gap: 120px;
+}
 .foot-container{
     width: 264px;
 }
-
+.footer-sotial{
+    width: 208px;
+}
+.link.foot-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--Light);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.link.foot-icon:hover,
+.link.foot-icon:focus{
+background-color:var(--success);
+}
+.foot-list-sotial-link{
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
 /* PORTFOLIO IMAGES  */
 .portfolio-picture{
    display: block;

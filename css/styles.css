@@ -153,11 +153,6 @@ body {
     display: flex;
     justify-content: center;
 }
-.filter .button:hover,
-.filter .button:focus{
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-color: var(--primary-brand);
-}
 .filter-button:not(:last-child){
     margin-right: 24px;
 }
@@ -165,10 +160,13 @@ border-color: var(--primary-brand);
 .button:focus{
     color: var(--background);
     background-color: var(--primary-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-brand);
 }
 .mainbutton.button{
     color:var(--background);
     background-color: var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;

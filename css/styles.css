@@ -153,6 +153,11 @@ body {
     display: flex;
     justify-content: center;
 }
+.filter .button:hover,
+.filter .button:focus{
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-color: var(--primary-brand);
+}
 .filter-button:not(:last-child){
     margin-right: 24px;
 }
@@ -271,11 +276,11 @@ color: var(--primary-brand);
 .picture{
     background-color: var(--Light);
     border-radius: 4px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
 
 }
 
@@ -421,6 +426,11 @@ background-color:var(--success);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+}
+.portfolio-exempls .link:hover,
+.portfolio-exempls .link:focus{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+display: block;
 }
 .portfolio-exempls .text-content{
     border:0.5px solid var(--Light);
